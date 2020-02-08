@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="c5d0171a-f803-4f10-aa60-1e03bcb46d39" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+        <option value="CSS File" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectId" id="1XWsLPCbWblqwAqydO6RuZcPFv9" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="javascript.nodejs.core.library.configured.version" value="13.6.0" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
+    <property name="nodejs_package_manager_path" value="yarn" />
+  </component>
+  <component name="RunManager">
+    <configuration name="build" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="build" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="npm.build" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="c5d0171a-f803-4f10-aa60-1e03bcb46d39" name="Default Changelist" comment="" />
+      <created>1581173128625</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1581173128625</updated>
+      <workItem from="1581173131198" duration="1198000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="440" y="158" key="#Inspections" timestamp="1581174453820">
+      <screen x="0" y="23" width="1680" height="940" />
+    </state>
+    <state x="440" y="158" key="#Inspections/0.23.1680.940@0.23.1680.940" timestamp="1581174453820" />
+    <state width="1659" height="232" key="GridCell.Tab.0.bottom" timestamp="1581174798423">
+      <screen x="0" y="23" width="1680" height="940" />
+    </state>
+    <state width="1659" height="232" key="GridCell.Tab.0.bottom/0.23.1680.940@0.23.1680.940" timestamp="1581174798423" />
+    <state width="1659" height="232" key="GridCell.Tab.0.center" timestamp="1581174798422">
+      <screen x="0" y="23" width="1680" height="940" />
+    </state>
+    <state width="1659" height="232" key="GridCell.Tab.0.center/0.23.1680.940@0.23.1680.940" timestamp="1581174798422" />
+    <state width="1659" height="232" key="GridCell.Tab.0.left" timestamp="1581174798421">
+      <screen x="0" y="23" width="1680" height="940" />
+    </state>
+    <state width="1659" height="232" key="GridCell.Tab.0.left/0.23.1680.940@0.23.1680.940" timestamp="1581174798421" />
+    <state width="1659" height="232" key="GridCell.Tab.0.right" timestamp="1581174798422">
+      <screen x="0" y="23" width="1680" height="940" />
+    </state>
+    <state width="1659" height="232" key="GridCell.Tab.0.right/0.23.1680.940@0.23.1680.940" timestamp="1581174798422" />
+  </component>
+</project>
