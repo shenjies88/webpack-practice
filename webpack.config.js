@@ -1,8 +1,11 @@
 const path = require('path');
+const webpack = require("webpack");
 //打包模板
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 //分离打包css文件
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+//定义环境变量
+const DefinePlugin = webpack.DefinePlugin;
 
 module.exports = {
     resolve: {
@@ -21,8 +24,18 @@ module.exports = {
             filename: "[name].css",
             chunkFilename: "[id].css",
         }),
+        new DefinePlugin({
+            PRODUCTION: JSON.stringify(true), // const PRODUCTION = true
+            VERSION: JSON.stringify('5fa3b9'), // const VERSION = '5fa3b9'
+            BROWSER_SUPPORTS_HTML5: true, // const BROWSER_SUPPORTS_HTML5 = 'true'
+            TWO: '1+1', // const TWO = 1 + 1,
+            CONSTANTS: {
+                APP_VERSION: JSON.stringify('1.1.2') // const CONSTANTS = { APP_VERSION: '1.1.2' }
+            }
+        }),
     ],
     module: {
+        noParse: /jquery|lodash/, // 不需要解析的依赖
         //解析插件
         rules: [
             {
@@ -69,5 +82,5 @@ module.exports = {
                 }
             },
         ],
-    }
+    },
 };

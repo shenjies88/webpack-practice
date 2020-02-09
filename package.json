@@ -1,7 +1,8 @@
 {
   "scripts": {
     "build": "webpack --mode production",
-    "start": "webpack-dev-server --mode development"
+    "start": "webpack-dev-server --mode development",
+    "app": "node app.js"
   },
   "devDependencies": {
     "@babel/cli": "^7.8.4",
@@ -15,10 +16,12 @@
     "mini-css-extract-plugin": "^0.9.0",
     "webpack": "^4.41.5",
     "webpack-cli": "^3.3.10",
+    "webpack-dev-middleware": "^3.7.2",
     "webpack-dev-server": "^3.10.3"
   },
   "dependencies": {
     "@babel/polyfill": "^7.8.3",
+    "express": "^4.17.1",
     "less": "^3.10.3"
   }
 }
