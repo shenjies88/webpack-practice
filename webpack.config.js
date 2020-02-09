@@ -5,6 +5,10 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
 module.exports = {
+    resolve: {
+        //导入扩展名补全
+        extensions: ['.wasm', '.mjs', '.js', '.json', '.jsx', '.css'],
+    },
     plugins: [
         new HtmlWebpackPlugin(),
         new MiniCssExtractPlugin({
@@ -13,6 +17,7 @@ module.exports = {
         }),
     ],
     module: {
+        //解析插件
         rules: [
             {
                 test: /\.css$/i,
