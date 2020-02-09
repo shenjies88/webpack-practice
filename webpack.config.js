@@ -6,8 +6,14 @@ const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
 module.exports = {
     resolve: {
-        //导入扩展名补全
-        extensions: ['.wasm', '.mjs', '.js', '.json', '.jsx', '.css'],
+        alias: {
+            utils: path.resolve(__dirname, 'src/utils') // 这里使用 path.resolve 和 __dirname 来获取绝对路径
+        },
+        extensions: ['.wasm', '.mjs', '.js', '.json', '.jsx', '.css', '.less'], //导入扩展名补全
+        modules: [
+            path.resolve(__dirname, 'node_modules'), // 指定当前目录下的 node_modules 优先查找
+            'node_modules', // 如果有一些类库是放在一些奇怪的地方的，你可以添加自定义的路径或者目录
+        ],
     },
     plugins: [
         new HtmlWebpackPlugin(),
@@ -21,9 +27,6 @@ module.exports = {
         rules: [
             {
                 test: /\.css$/i,
-                include: [
-                    path.resolve(__dirname, 'src'),
-                ],
                 use: [
                     {
                         loader: MiniCssExtractPlugin.loader,
@@ -36,12 +39,15 @@ module.exports = {
             },
             {
                 test: /\.less$/i,
-                include: [
-                    path.resolve(__dirname, 'src'),
-                ],
                 use: [
-                    MiniCssExtractPlugin.loader,
+                    {
+                        loader: MiniCssExtractPlugin.loader,
+                        options: {
+                            publicPath: path.resolve(__dirname, 'dist')
+                        }
+                    },
                     'css-loader',
+                    'less-loader',
                 ],
             },
             {
