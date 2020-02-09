@@ -19,7 +19,12 @@ module.exports = {
         ],
     },
     plugins: [
-        new HtmlWebpackPlugin(),
+        new HtmlWebpackPlugin({
+            minify: { // 压缩 HTML 的配置
+                minifyCSS: true, // 压缩 HTML 中出现的 CSS 代码
+                minifyJS: true // 压缩 HTML 中出现的 JS 代码
+            }
+        }),
         new MiniCssExtractPlugin({
             filename: "[name].css",
             chunkFilename: "[id].css",
@@ -83,4 +88,7 @@ module.exports = {
             },
         ],
     },
+    devServer: {
+        hot: true
+    }
 };
