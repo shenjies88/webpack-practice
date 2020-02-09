@@ -15,8 +15,8 @@ module.exports = {
         extensions: ['.wasm', '.mjs', '.js', '.json', '.jsx', '.css', '.less'], //导入扩展名补全
         modules: [
             path.resolve(__dirname, 'node_modules'), // 指定当前目录下的 node_modules 优先查找
-            'node_modules', // 如果有一些类库是放在一些奇怪的地方的，你可以添加自定义的路径或者目录
         ],
+        mainFields: ['index'],
     },
     plugins: [
         new HtmlWebpackPlugin({
@@ -87,6 +87,11 @@ module.exports = {
                 }
             },
         ],
+    },
+    optimization: {
+        splitChunks: {
+            chunks: "all", // 所有的 chunks 代码公共的部分分离出来成为一个单独的文件
+        },
     },
     devServer: {
         hot: true
